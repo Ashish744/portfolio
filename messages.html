@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages · Stackly</title>
+  <meta name="description" content="Your Stackly project messages.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dash-body">
+  <div id="cursor-dot"></div><div id="cursor-ring"></div><div id="page-transition"></div><div class="dash-sidebar-overlay"></div>
+  <header class="dash-topbar"><button class="dash-sidebar-toggle" aria-label="Toggle menu"><span></span></button><a href="public-dashboard.html" class="navbar-brand" aria-label="Stackly dashboard"><img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="150" height="34"></a><div class="dash-topbar-right"><a class="btn btn-ghost" href="public-dashboard.html">Overview</a></div></header>
+  <aside class="dash-sidebar"><nav class="dash-nav"><div class="dash-nav-group"><div class="dash-nav-label">MAIN</div><a href="public-dashboard.html"><span aria-hidden="true">◈</span> Overview</a><a href="portfolio.html"><span aria-hidden="true">▣</span> Portfolio</a><a href="saved-projects.html"><span aria-hidden="true">♡</span> Saved Projects</a><a href="messages.html" class="is-active"><span aria-hidden="true">□</span> Messages</a></div><div class="dash-nav-group"><div class="dash-nav-label">ACCOUNT</div><a href="login.html"><span aria-hidden="true">↩</span> Log Out</a></div></nav></aside>
+  <main class="dash-main dash-public" id="main">
+    <div class="dash-head"><div><h1>Messages</h1><p>Updates and conversations from your Stackly studio team.</p></div><button class="btn btn-primary" type="button">Start a message</button></div>
+    <div class="dash-panel"><div class="dash-panel-head"><h3>Recent conversations</h3><span class="pill ok">3 unread</span></div><div class="message-item"><img src="assets/images/index10.webp" alt="Maya Chen"><div><strong>Maya Chen · Project Lead</strong><p>I've added the latest design review notes to your Full Site project.</p><span>Today · 10:24 AM</span></div></div><div class="message-item"><img src="assets/images/index14.webp" alt="Daniel Osei"><div><strong>Daniel Osei · Developer</strong><p>The responsive prototype is ready for your feedback.</p><span>Yesterday · 4:15 PM</span></div></div><div class="message-item"><img src="assets/images/index15.webp" alt="Priya Nair"><div><strong>Priya Nair · Brand Designer</strong><p>I've sent over the updated brand assets you requested.</p><span>3 days ago</span></div></div></div>
+    <div class="dash-panels">
+      <section class="dash-panel"><div class="dash-panel-head"><h2>Unread Summary</h2><span class="pill pending">3 unread</span></div><div class="dash-grid message-summary-grid"><div class="dash-card"><div class="dash-card-label">Project updates</div><div class="value">2</div></div><div class="dash-card"><div class="dash-card-label">Review requests</div><div class="value">1</div></div></div></section>
+      <section class="dash-panel"><div class="dash-panel-head"><h2>Response Status</h2><span class="pill ok">On track</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Average team response</p><span>Usually within 4 hours</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Next scheduled review</p><span>Thursday · 3:00 PM</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Open conversations</p><span>2 active project threads</span></div></div></div></section>
+    </div>
+    <section class="dash-panel"><div class="dash-panel-head"><h2>Contact the Team</h2><span class="pill ok">Available today</span></div><div class="message-item"><img src="assets/images/index10.webp" alt="Maya Chen"><div><strong>Project questions</strong><p>Maya can help with scope, feedback, and delivery timelines.</p><span>Typical response: under 4 hours</span></div></div><div class="message-item"><img src="assets/images/index15.webp" alt="Priya Nair"><div><strong>Brand and visual direction</strong><p>Priya can help with identity, content, and visual system questions.</p><span>Typical response: same business day</span></div></div></section>
+  </main>
+  <script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Stackly</title>
+  <meta name="description" content="Start a project with Stackly — get in touch today.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="page-transition"></div>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" aria-label="Stackly — go to homepage">
+        <img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="160" height="38">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="login.html" class="btn btn-ghost" data-magnetic>Login</a>
+        <a href="create-account.html" class="btn btn-primary" data-magnetic>Create Account</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost btn-block">Login</a>
+      <a href="create-account.html" class="btn btn-primary btn-block">Create Account</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- CONTACT HERO -->
+    <!-- ============ HERO (shared slider layout, 4s auto-rotate) ============ -->
+    <section class="hero hero--photo">
+      <div class="hero-bg-photo" aria-hidden="true">
+        <img src="assets/images/index13.webp" alt="Warm-toned studio meeting backdrop" loading="eager">
+      </div>
+      <div class="hero-bg-scrim" aria-hidden="true"></div>
+      <div class="hero-bg-shape" aria-hidden="true"></div>
+      <script type="application/json" class="hero-slides">
+        [
+          {
+            "img": "assets/images/index14.webp",
+            "alt": "Studio desk set up for a client call",
+            "title": "Let's Build Something <em>Worth Showing.</em>",
+            "desc": "Tell us a bit about the project and we will reply within one business day with something useful.",
+            "cta": "Send a Message"
+          },
+          {
+            "img": "assets/images/index15.webp",
+            "alt": "Team reviewing project plans together",
+            "title": "Start With A <em>Conversation.</em>",
+            "desc": "A 30-minute call is usually enough to work out whether the project is a good fit for both sides.",
+            "cta": "Book a Call"
+          },
+          {
+            "img": "assets/images/index1.webp",
+            "alt": "Map and travel notes on a studio table",
+            "title": "Based In Begur, <em>Working Worldwide.</em>",
+            "desc": "Headquartered in Bengaluru and comfortable collaborating across time zones, fully remote.",
+            "cta": "Find Us"
+          }
+        ]
+      </script>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker"><span class="dot"></span> Contact</div>
+          <h1 class="hero-title">
+            <span class="line"><span>Let's Build Something</span></span>
+            <span class="line"><span>Worth Showing.</span></span>
+          </h1>
+          <p class="hero-description">Tell us a bit about the project and we will reply within one business day with something useful.</p>
+          <div class="hero-actions">
+            <a href="#form" class="btn btn-primary" data-magnetic><span class="hero-cta">Send a Message</span></a>
+            <a href="https://wa.me/7010792745" class="btn btn-ghost" data-magnetic target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+          <div class="hero-dots" role="tablist" aria-label="Hero slides">
+            <button type="button" class="hero-dot is-active" role="tab" aria-selected="true" aria-label="Show slide 1"></button>
+            <button type="button" class="hero-dot" role="tab" aria-selected="false" aria-label="Show slide 2"></button>
+            <button type="button" class="hero-dot" role="tab" aria-selected="false" aria-label="Show slide 3"></button>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-preview">
+            <img class="hero-image" src="assets/images/index2.webp" alt="Studio desk set up for a client call" width="1000" height="1250">
+          </div>
+          <div class="hero-float-card" data-float="12">
+            <div class="ring" style="--ring-p:92%"></div>
+            <div>
+              <strong><24h</strong>
+              <span>Typical reply time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator"><span>SCROLL</span><span class="line"></span></div>
+    </section>
+
+    <!-- CONTACT INFORMATION -->
+    <section class="section-tight" id="info">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-card" data-reveal="fade-up" data-split="none">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+            <h4>Email</h4><p><a class="contact-link" href="mailto:hr@stackly.com">hr@stackly.com</a></p>
+          </div>
+          <div class="info-card" data-reveal="fade-up" data-split="none" data-delay="0.08">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.2Z"/></svg>
+            <h4>Phone / WhatsApp</h4><p><a class="contact-link" href="tel:+917010792745">+91 70107 92745</a></p><p><a class="contact-link contact-link--wa" href="https://wa.me/7010792745" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+          </div>
+          <div class="info-card" data-reveal="fade-up" data-split="none" data-delay="0.16">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h4>Studio</h4><address class="contact-address">Suraksha Nagar, Yelenahalli, Begur,<br>Bengaluru, Karnataka&nbsp;-&nbsp;560068</address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="section" id="form">
+      <div class="container">
+        <div class="intro-grid" style="align-items:flex-start">
+          <div>
+            <span class="eyebrow">Get in touch</span>
+            <h2 data-reveal="fade-up" data-split="words" data-stagger="0.05">Send a message</h2>
+            <p class="text-secondary" style="margin-top:16px;max-width:44ch">Include a rough budget and timeline if you have one — it helps me reply with something useful instead of a generic "tell me more."</p>
+          </div>
+
+          <div>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first-name" placeholder="name" required>
+                  <span class="form-error"></span>
+                </div>
+                <div class="form-field">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" placeholder="lastname" required>
+                  <span class="form-error"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                  <span class="form-error"></span>
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1234558552" required>
+                  <span class="form-error"></span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="New product design project" required>
+                <span class="form-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="A little about the project, timeline and budget…" required></textarea>
+                <span class="form-error"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" data-magnetic>Send Message</button>
+            </form>
+
+            <div class="form-success" id="contact-success">
+              <div class="check">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M5 12l5 5 9-9"/></svg>
+              </div>
+              <h3>Message sent</h3>
+              <p>Thanks for reaching out — I'll reply within one business day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION / MAP-STYLE VISUAL -->
+    <section class="section-tight" id="location">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Based in</span>
+          <h2 data-reveal="fade-left" data-split="none">Begur, Bengaluru — working worldwide</h2>
+        </div>
+        <div class="map-panel" data-reveal="scale" data-split="none">
+          <div class="map-pin"></div>
+          <div class="map-caption"><strong>Stackly Studio</strong><br>Suraksha Nagar, Yelenahalli, Begur, Bengaluru&nbsp;-&nbsp;560068</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section class="section-tight" id="availability">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">This week</span>
+          <h2 data-reveal="fade-up" data-split="words">Availability</h2>
+        </div>
+        <div class="availability-grid">
+          <div class="avail-day is-open"><span>Mon</span><i></i></div>
+          <div class="avail-day is-open"><span>Tue</span><i></i></div>
+          <div class="avail-day is-open"><span>Wed</span><i></i></div>
+          <div class="avail-day is-open"><span>Thu</span><i></i></div>
+          <div class="avail-day is-open"><span>Fri</span><i></i></div>
+          <div class="avail-day"><span>Sat</span><i></i></div>
+          <div class="avail-day"><span>Sun</span><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Before you write in</span>
+          <h2 data-reveal="typewriter" data-split="chars">Quick answers</h2>
+        </div>
+        <div class="accordion-list">
+          <div class="accordion-item"><button class="accordion-trigger" type="button"><span class="left"><h4>What's the best way to reach you?</h4></span><span class="accordion-icon"></span></button><div class="accordion-panel"><div class="accordion-panel-inner">The form above — it routes straight to my inbox and gives me the context I need to reply properly.</div></div></div>
+          <div class="accordion-item"><button class="accordion-trigger" type="button"><span class="left"><h4>Do you sign NDAs?</h4></span><span class="accordion-icon"></span></button><div class="accordion-panel"><div class="accordion-panel-inner">Happy to, for serious early-stage conversations — just mention it in your message.</div></div></div>
+          <div class="accordion-item"><button class="accordion-trigger" type="button"><span class="left"><h4>Do you take non-design projects?</h4></span><span class="accordion-icon"></span></button><div class="accordion-panel"><div class="accordion-panel-inner">Occasionally, if there's a strong design or animation component involved.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE CTA -->
+    <section class="section final-cta" id="cta">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="container">
+        <h2 data-reveal="scale" data-split="words">Not ready to write in? Explore the work first.</h2>
+        <div class="actions">
+          <a href="services.html" class="btn btn-primary" data-magnetic>See Services</a>
+          <a href="index.html" class="btn btn-ghost" data-magnetic>Back Home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div class="form-toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="footer-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo/logo.webp" class="footer-logo" alt="Stackly logo" width="180" height="44">
+          <p>A creative studio for interfaces, motion and digital experiences that hold up under scroll.</p>
+          <a class="footer-whatsapp" href="https://wa.me/7010792745" target="_blank" rel="noopener" aria-label="Chat with Stackly on WhatsApp">
+            <span class="footer-whatsapp-dot" aria-hidden="true"></span>
+            Chat on WhatsApp
+          </a>
+
+          <nav class="footer-social" aria-label="Stackly on social media">
+            <a href="404.html" class="social-icon" aria-label="Stackly on Instagram" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+                <circle cx="12" cy="12" r="3.9"/>
+                <circle cx="17.1" cy="6.9" r="1.05" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on LinkedIn" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="4"/>
+                <path d="M8 10.8v6"/>
+                <circle cx="8" cy="7.7" r="1.05" fill="currentColor" stroke="none"/>
+                <path d="M11.9 16.8v-3.5a2.4 2.4 0 0 1 4.8 0v3.5"/>
+                <path d="M11.9 16.8v-6"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on GitHub" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M9.2 19.4c-3.6 1.1-3.6-2.2-5-2.6m10 4.2v-3.2a2.8 2.8 0 0 0-.8-2.2c2.6-.3 5.3-1.3 5.3-5.7a4.4 4.4 0 0 0-1.2-3.1 4.1 4.1 0 0 0-.1-3.1s-1-.3-3.3 1.2a11.3 11.3 0 0 0-5.8 0C5.9 3.4 4.9 3.7 4.9 3.7a4.1 4.1 0 0 0-.1 3.1 4.4 4.4 0 0 0-1.2 3.2c0 4.3 2.7 5.3 5.3 5.6a2.8 2.8 0 0 0-.8 2.2V21"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on X, formerly Twitter" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <path d="M4.6 4.4h3.1l11.7 15.2h-3.1z"/>
+                <path d="M19.1 4.4 13.8 10.3M10.1 13.5l-5.4 6.1"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on Behance" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M2.9 6.6h4.4a2.2 2.2 0 0 1 0 4.4H2.9zM2.9 11h4.9a2.4 2.4 0 0 1 0 4.8H2.9z"/>
+                <path d="M14.3 12.6h6.8a3.1 3.1 0 0 0-3.2-3.1 3.3 3.3 0 0 0-3.4 3.4 3.3 3.3 0 0 0 3.4 3.4 3.3 3.3 0 0 0 2.8-1.4"/>
+                <path d="M15.4 6.9h4.3"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on Dribbble" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="8.6"/>
+                <path d="M3.9 9.2c5 1.7 10.6 1.5 16.2-.5M3.7 14.9c6-1.4 11.4-.4 15.4 3.5M9 3.7c3.5 4.6 5.3 9.9 5.1 17.1"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+        <p class="footer-huge" data-reveal="fade-up" data-split="words" data-stagger="0.08">
+          <a href="contact.html" data-magnetic>Let's talk</a>
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="404.html">Web Design</a>
+          <a href="404.html">Web Development</a>
+          <a href="404.html">UI/UX Design</a>
+          <a href="404.html">Branding</a>
+          <a href="404.html">Motion Design</a>
+        </div>
+        <div class="footer-col footer-col--contact">
+          <h5>Get in touch</h5>
+          <a class="footer-contact-line" href="mailto:hr@stackly.com">
+            <span class="footer-contact-label">Email</span>
+            hr@stackly.com
+          </a>
+          <a class="footer-contact-line" href="tel:+917010792745">
+            <span class="footer-contact-label">Phone</span>
+            +91 70107 92745
+          </a>
+          <a class="footer-contact-line" href="404.html" target="_blank" rel="noopener">
+            <span class="footer-contact-label">WhatsApp</span>
+            Message us directly
+          </a>
+        </div>
+        <div class="footer-col">
+          <h5>Studio address</h5>
+          <address class="footer-address">
+            Suraksha Nagar, Yelenahalli, Begur,<br>
+            Bengaluru, Karnataka&nbsp;-&nbsp;560068
+          </address>
+          <h5 style="margin-top:22px">Legal</h5>
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Stackly. All rights reserved.</span>
+        <span>Designed &amp; built with GSAP</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/validation.js"></script>
+
+</body>
+</html>

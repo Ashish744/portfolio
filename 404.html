@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found · Stackly</title>
+  <meta name="description" content="This page could not be found.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="page-transition"></div>
+
+
+  <main class="error-page" id="main">
+    <div class="error-particles" aria-hidden="true"></div>
+
+    <div class="error-code" data-float="8">
+      <span class="glitch" data-text="4">4</span>
+      <span class="glitch" data-text="0">0</span>
+      <span class="glitch" data-text="4">4</span>
+    </div>
+    <h1 class="error-title" data-reveal="fade-up" data-split="words">This page wandered off-canvas.</h1>
+    <p class="error-desc">The link you followed might be broken, or the page may have been moved. Let's get you back on track.</p>
+    <div class="error-actions">
+      <button type="button" class="btn btn-ghost" onclick="history.length > 1 ? history.back() : location.href='index.html'" data-magnetic>← Back</button>
+      <a href="index.html" class="btn btn-primary" data-magnetic>Home</a>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>

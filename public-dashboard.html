@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Dashboard · Stackly</title>
+  <meta name="description" content="Your Stackly member dashboard.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+<body class="dash-body">
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="page-transition"></div>
+
+  <div class="dash-sidebar-overlay"></div>
+
+  <header class="dash-topbar">
+    <button class="dash-sidebar-toggle" aria-label="Toggle menu"><span></span></button>
+    <a href="public-dashboard.html" class="navbar-brand" aria-label="Stackly dashboard"><img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="150" height="34"></a>
+    <div class="dash-topbar-right">
+      <button class="notif-btn" data-goto-404 aria-label="Notifications">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+        <span class="notif-dot"></span>
+      </button>
+      <div class="dash-profile">
+        <button class="dash-profile-btn">
+          <img src="assets/images/index5.webp" alt="Member profile photo">
+          <span class="name"><strong>Ada Lovelace</strong><span>Member</span></span>
+        </button>
+        <div class="dash-profile-menu">
+          <a href="404.html">My Profile</a>
+          <a href="404.html">Account Settings</a>
+          <a href="login.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside class="dash-sidebar">
+    <nav class="dash-nav">
+      <div class="dash-nav-group">
+        <div class="dash-nav-label">MAIN</div>
+        <a href="public-dashboard.html" class="is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg> Overview</a>
+        <a href="portfolio.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg> Portfolio</a>
+        <a href="saved-projects.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m19 21-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg> Saved Projects</a>
+        <a href="messages.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg> Messages</a>
+      </div>
+      <div class="dash-nav-group">
+        <div class="dash-nav-label">ACCOUNT</div>
+        <a href="404.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg> Notifications</a>
+        <a href="404.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg> Settings</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="dash-main dash-public" id="main">
+    <div class="welcome-banner">
+      <div>
+        <h1>Welcome back, Ada 👋</h1>
+        <p class="text-secondary">Your Full Site project is 68% through the design phase.</p>
+      </div>
+      <button class="btn btn-primary" data-goto-404>View Proposal</button>
+    </div>
+
+    <div class="dash-head">
+      <div><h1>Your overview</h1><p>A snapshot of your projects and saved work.</p></div>
+    </div>
+
+    <div class="dash-grid">
+      <div class="dash-card"><div class="dash-card-label">Active Project</div><div class="value" style="font-size:1.3rem">Full Site Build</div><div class="progress-track"><i data-value="68"></i></div></div>
+      <div class="dash-card"><div class="dash-card-label">Saved Projects</div><div class="value" data-counter="9">0</div><div class="delta up">↑ 2 this week</div></div>
+      <div class="dash-card"><div class="dash-card-label">Unread Messages</div><div class="value" data-counter="3">0</div><div class="delta up">New reply from studio</div></div>
+      <div class="dash-card"><div class="dash-card-label">Member Since</div><div class="value" style="font-size:1.3rem">Mar 2025</div><div class="delta">18 months</div></div>
+    </div>
+
+    <div class="dash-panels">
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Project Progress</h3></div>
+        <div class="chart-bars">
+          <div class="bar"><i data-value="100"></i><span>Discover</span></div>
+          <div class="bar"><i data-value="100"></i><span>Research</span></div>
+          <div class="bar"><i data-value="80"></i><span>Design</span></div>
+          <div class="bar"><i data-value="35"></i><span>Develop</span></div>
+          <div class="bar"><i data-value="10"></i><span>Animate</span></div>
+          <div class="bar"><i data-value="0"></i><span>Launch</span></div>
+        </div>
+      </div>
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Profile Completeness</h3></div>
+        <div class="chart-donut" data-value="82"><strong>82%</strong></div>
+        <p class="text-secondary" style="font-size:.82rem;text-align:center;margin-top:14px">Add a company logo to reach 100%.</p>
+      </div>
+    </div>
+
+    <div class="dash-panels">
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Saved Projects</h3><button data-goto-404>View All</button></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Project</th><th>Category</th><th>Saved</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Orbital — Fintech Dashboard</td><td>Product Design</td><td>2 weeks ago</td><td class="row-actions"><button data-goto-404>Open</button></td></tr>
+              <tr><td>Kindred — Branding &amp; Site</td><td>Branding</td><td>1 month ago</td><td class="row-actions"><button data-goto-404>Open</button></td></tr>
+              <tr><td>Northline — Mobile App</td><td>UI/UX</td><td>1 month ago</td><td class="row-actions"><button data-goto-404>Open</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Recent Activity</h3></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Design review notes added</p><span>3 hours ago</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>You saved "Orbital — Fintech Dashboard"</p><span>2 days ago</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>New proposal uploaded</p><span>5 days ago</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-panel">
+      <div class="dash-panel-head"><h3>Recommended for you</h3><button data-goto-404>See More</button></div>
+      <div class="dash-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:0">
+        <div class="dash-card float-slow"><div class="dash-card-label">Insight</div><p style="font-size:.88rem;margin-top:6px">Sites with a bento-grid loader see 22% lower bounce on first visit.</p></div>
+        <div class="dash-card float-slow delay"><div class="dash-card-label">Suggested Service</div><p style="font-size:.88rem;margin-top:6px">Add Motion Design to your package for an animated case-study page.</p></div>
+        <div class="dash-card float-slow"><div class="dash-card-label">Reminder</div><p style="font-size:.88rem;margin-top:6px">Your design review call is Thursday at 3:00 PM.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>

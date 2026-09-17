@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio · Stackly</title>
+  <meta name="description" content="Browse Stackly portfolio projects.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dash-body">
+  <div id="cursor-dot"></div><div id="cursor-ring"></div><div id="page-transition"></div>
+  <div class="dash-sidebar-overlay"></div>
+  <header class="dash-topbar">
+    <button class="dash-sidebar-toggle" aria-label="Toggle menu"><span></span></button>
+    <a href="public-dashboard.html" class="navbar-brand" aria-label="Stackly dashboard"><img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="150" height="34"></a>
+    <div class="dash-topbar-right"><a class="btn btn-ghost" href="public-dashboard.html">Overview</a></div>
+  </header>
+  <aside class="dash-sidebar">
+    <nav class="dash-nav">
+      <div class="dash-nav-group"><div class="dash-nav-label">MAIN</div>
+        <a href="public-dashboard.html"><span aria-hidden="true">◈</span> Overview</a>
+        <a href="portfolio.html" class="is-active"><span aria-hidden="true">▣</span> Portfolio</a>
+        <a href="saved-projects.html"><span aria-hidden="true">♡</span> Saved Projects</a>
+        <a href="messages.html"><span aria-hidden="true">□</span> Messages</a>
+      </div>
+      <div class="dash-nav-group"><div class="dash-nav-label">ACCOUNT</div><a href="login.html"><span aria-hidden="true">↩</span> Log Out</a></div>
+    </nav>
+  </aside>
+  <main class="dash-main dash-public" id="main">
+    <div class="dash-head"><div><h1>Portfolio</h1><p>Explore selected work from the Stackly studio.</p></div></div>
+    <div class="dash-grid portfolio-grid">
+      <article class="dash-card"><img src="assets/images/index11.webp" alt="Orbital fintech dashboard project" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:16px"><div class="dash-card-label">Product Design</div><h2 style="font-size:1.25rem">Orbital Dashboard</h2><p class="text-secondary" style="font-size:.86rem;margin-top:8px">A calmer trading experience built for quick decisions.</p></article>
+      <article class="dash-card"><img src="assets/images/index12.webp" alt="Kindred branding project" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:16px"><div class="dash-card-label">Branding · Web</div><h2 style="font-size:1.25rem">Kindred</h2><p class="text-secondary" style="font-size:.86rem;margin-top:8px">A warm identity and digital home for a wellness studio.</p></article>
+      <article class="dash-card"><img src="assets/images/index13.webp" alt="Northline mobile app project" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:16px"><div class="dash-card-label">UI/UX · Motion</div><h2 style="font-size:1.25rem">Northline App</h2><p class="text-secondary" style="font-size:.86rem;margin-top:8px">A logistics workflow redesigned around one clear action.</p></article>
+    </div>
+
+    <div class="dash-panels">
+      <section class="dash-panel">
+        <div class="dash-panel-head"><h2>Project Highlights</h2><span class="pill ok">Selected work</span></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Orbital reduced task time by 34%</p><span>Product strategy and interface design</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Kindred launched across 12 touchpoints</p><span>Identity system and marketing site</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Northline improved dispatch clarity</p><span>Mobile UX and motion direction</span></div></div>
+        </div>
+      </section>
+      <section class="dash-panel">
+        <div class="dash-panel-head"><h2>Delivery Outcomes</h2><span class="pill pending">2026</span></div>
+        <div class="dash-grid outcome-grid">
+          <div class="dash-card"><div class="dash-card-label">Projects shipped</div><div class="value">50+</div></div>
+          <div class="dash-card"><div class="dash-card-label">Client rating</div><div class="value">4.9/5</div></div>
+          <div class="dash-card"><div class="dash-card-label">Repeat clients</div><div class="value">78%</div></div>
+          <div class="dash-card"><div class="dash-card-label">Years in craft</div><div class="value">5+</div></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="dash-panel">
+      <div class="dash-panel-head"><h2>How We Work</h2><span class="pill ok">End to end</span></div>
+      <div class="activity-list">
+        <div class="activity-item"><span class="activity-dot"></span><div><p>01 · Discover</p><span>Align on the problem, audience, and definition of success.</span></div></div>
+        <div class="activity-item"><span class="activity-dot"></span><div><p>02 · Design</p><span>Turn the strongest direction into a clear, usable system.</span></div></div>
+        <div class="activity-item"><span class="activity-dot"></span><div><p>03 · Ship</p><span>Prototype, build, test, and hand over work ready for launch.</span></div></div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Projects · Stackly</title>
+  <meta name="description" content="Your saved Stackly projects.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dash-body">
+  <div id="cursor-dot"></div><div id="cursor-ring"></div><div id="page-transition"></div><div class="dash-sidebar-overlay"></div>
+  <header class="dash-topbar"><button class="dash-sidebar-toggle" aria-label="Toggle menu"><span></span></button><a href="public-dashboard.html" class="navbar-brand" aria-label="Stackly dashboard"><img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="150" height="34"></a><div class="dash-topbar-right"><a class="btn btn-ghost" href="public-dashboard.html">Overview</a></div></header>
+  <aside class="dash-sidebar"><nav class="dash-nav"><div class="dash-nav-group"><div class="dash-nav-label">MAIN</div><a href="public-dashboard.html"><span aria-hidden="true">◈</span> Overview</a><a href="portfolio.html"><span aria-hidden="true">▣</span> Portfolio</a><a href="saved-projects.html" class="is-active"><span aria-hidden="true">♡</span> Saved Projects</a><a href="messages.html"><span aria-hidden="true">□</span> Messages</a></div><div class="dash-nav-group"><div class="dash-nav-label">ACCOUNT</div><a href="login.html"><span aria-hidden="true">↩</span> Log Out</a></div></nav></aside>
+  <main class="dash-main dash-public" id="main">
+    <div class="dash-head"><div><h1>Saved Projects</h1><p>Keep track of the work you want to revisit.</p></div></div>
+    <div class="dash-panel"><div class="dash-panel-head"><h3>3 saved projects</h3><span class="pill ok">Up to date</span></div><div class="table-wrap"><table><thead><tr><th>Project</th><th>Category</th><th>Saved</th><th>Status</th><th></th></tr></thead><tbody><tr><td>Orbital — Fintech Dashboard</td><td>Product Design</td><td>2 weeks ago</td><td><span class="pill ok">Available</span></td><td class="row-actions"><a href="portfolio.html">View</a></td></tr><tr><td>Kindred — Branding &amp; Site</td><td>Branding</td><td>1 month ago</td><td><span class="pill ok">Available</span></td><td class="row-actions"><a href="portfolio.html">View</a></td></tr><tr><td>Northline — Mobile App</td><td>UI/UX</td><td>1 month ago</td><td><span class="pill pending">In review</span></td><td class="row-actions"><a href="portfolio.html">View</a></td></tr></tbody></table></div></div>
+    <div class="dash-panels">
+      <section class="dash-panel"><div class="dash-panel-head"><h2>Saved by Category</h2><span class="pill ok">3 total</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Product Design</p><span>1 saved project</span></div><strong>01</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Branding</p><span>1 saved project</span></div><strong>01</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>UI/UX</p><span>1 saved project</span></div><strong>01</strong></div></div></section>
+      <section class="dash-panel"><div class="dash-panel-head"><h2>Recently Viewed</h2><span class="pill pending">This week</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Orbital Dashboard</p><span>Viewed today · Product Design</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Northline App</p><span>Viewed yesterday · UI/UX</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Kindred</p><span>Viewed 4 days ago · Branding</span></div></div></div></section>
+    </div>
+    <section class="dash-panel"><div class="dash-panel-head"><h2>Collection Notes</h2><span class="pill ok">Personal list</span></div><div class="message-item"><img src="assets/images/index11.webp" alt="Orbital Dashboard"><div><strong>Orbital Dashboard</strong><p>Useful reference for the reporting flow in your Full Site project.</p><span>Added 2 weeks ago</span></div></div><div class="message-item"><img src="assets/images/index12.webp" alt="Kindred branding project"><div><strong>Kindred</strong><p>Saved for its warm brand system and clear content hierarchy.</p><span>Added 1 month ago</span></div></div></section>
+  </main>
+  <script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/dashboard.js"></script>
+</body>
+</html>

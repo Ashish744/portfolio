@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog · Stackly</title>
+  <meta name="description" content="Notes on design, motion and the craft of building creative products.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="page-transition"></div>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" aria-label="Stackly — go to homepage">
+        <img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="160" height="38">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="login.html" class="btn btn-ghost" data-magnetic>Login</a>
+        <a href="create-account.html" class="btn btn-primary" data-magnetic>Create Account</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost btn-block">Login</a>
+      <a href="create-account.html" class="btn btn-primary btn-block">Create Account</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- BLOG HERO -->
+    <!-- ============ HERO (shared slider layout, 4s auto-rotate) ============ -->
+    <section class="hero hero--photo">
+      <div class="hero-bg-photo" aria-hidden="true">
+        <img src="assets/images/index13.webp" alt="Warm-toned desk and notebook backdrop" loading="eager">
+      </div>
+      <div class="hero-bg-scrim" aria-hidden="true"></div>
+      <div class="hero-bg-shape" aria-hidden="true"></div>
+      <script type="application/json" class="hero-slides">
+        [
+          {
+            "img": "assets/images/index14.webp",
+            "alt": "Notebook and reference material open on a desk",
+            "title": "Notes On Design, Motion &amp; The <em>Craft.</em>",
+            "desc": "Short, practical write-ups from real projects \u2014 not much theory, mostly what actually worked.",
+            "cta": "Read Latest"
+          },
+          {
+            "img": "assets/images/index15.webp",
+            "alt": "Animation timing curves on a screen",
+            "title": "What Makes Motion <em>Feel Premium.</em>",
+            "desc": "Breakdowns of the timing, easing and restraint that separate considered animation from decoration.",
+            "cta": "Browse Motion"
+          },
+          {
+            "img": "assets/images/index1.webp",
+            "alt": "Colour palette swatches pinned to a board",
+            "title": "Lessons From <em>Real Builds.</em>",
+            "desc": "Every post comes out of a shipped project \u2014 including the decisions that turned out to be wrong.",
+            "cta": "See Archive"
+          }
+        ]
+      </script>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker"><span class="dot"></span> Journal</div>
+          <h1 class="hero-title">
+            <span class="line"><span>Notes On Design,</span></span>
+            <span class="line"><span>Motion &amp; The Craft.</span></span>
+          </h1>
+          <p class="hero-description">Short, practical write-ups from real projects — not much theory, mostly what actually worked.</p>
+          <div class="hero-actions">
+            <a href="404.html" class="btn btn-primary" data-magnetic><span class="hero-cta">Read Latest</span></a>
+            <a href="404.html" class="btn btn-ghost" data-magnetic>Subscribe</a>
+          </div>
+          <div class="hero-dots" role="tablist" aria-label="Hero slides">
+            <button type="button" class="hero-dot is-active" role="tab" aria-selected="true" aria-label="Show slide 1"></button>
+            <button type="button" class="hero-dot" role="tab" aria-selected="false" aria-label="Show slide 2"></button>
+            <button type="button" class="hero-dot" role="tab" aria-selected="false" aria-label="Show slide 3"></button>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-preview">
+            <img class="hero-image" src="assets/images/index2.webp" alt="Notebook and reference material open on a desk" width="1000" height="1250">
+          </div>
+          <div class="hero-float-card" data-float="12">
+            <div class="ring" style="--ring-p:64%"></div>
+            <div>
+              <strong>27</strong>
+              <span>Articles published</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator"><span>SCROLL</span><span class="line"></span></div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="section-tight" id="featured">
+      <div class="container">
+        <div class="featured-article" data-reveal="fade-up" data-split="none">
+          <div class="media"><img src="assets/images/index3.webp" alt="Scroll animation storyboard" loading="lazy"></div>
+          <div class="copy">
+            <span class="tag">Motion Design</span>
+            <h2>Why most scroll animations feel worse than no animation at all</h2>
+            <p>A breakdown of the three mistakes that make scroll-triggered motion feel gimmicky instead of premium — and the fixes that took our own site from "busy" to "considered."</p>
+            <a href="404.html" class="btn btn-ghost" data-magnetic>Read the article</a>
+            <div class="meta">March 2026 · 7 min read</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTERS + ARTICLE GRID -->
+    <section class="section" id="articles">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Latest</span>
+          <h2 data-reveal="fade-up" data-split="words">All articles</h2>
+        </div>
+        <div class="filter-row">
+          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="design" type="button">Design</button>
+          <button class="filter-btn" data-filter="development" type="button">Development</button>
+          <button class="filter-btn" data-filter="branding" type="button">Branding</button>
+        </div>
+        <div class="blog-grid">
+          <a href="404.html" class="blog-card" data-category="design">
+            <div class="media"><span class="cat-tag">Design</span><img src="assets/images/index4.webp" alt="Wireframe sketches" loading="lazy"></div>
+            <div class="body"><div class="date">Feb 2026</div><h3>Designing empty states people actually enjoy</h3><p>Turning the most-ignored screen in the product into a small moment of delight.</p><span class="read-more">Read More</span></div>
+          </a>
+          <a href="404.html" class="blog-card" data-category="development">
+            <div class="media"><span class="cat-tag">Development</span><img src="assets/images/index5.webp" alt="Code on a laptop screen" loading="lazy"></div>
+            <div class="body"><div class="date">Feb 2026</div><h3>A lighter way to pin sections with ScrollTrigger</h3><p>Cutting jank from horizontal-scroll sections on mid-range phones.</p><span class="read-more">Read More</span></div>
+          </a>
+          <a href="404.html" class="blog-card" data-category="branding">
+            <div class="media"><span class="cat-tag">Branding</span><img src="assets/images/index6.webp" alt="Brand mark studies on paper" loading="lazy"></div>
+            <div class="body"><div class="date">Jan 2026</div><h3>How many logo concepts is too many?</h3><p>Why presenting three strong options beats presenting nine mediocre ones.</p><span class="read-more">Read More</span></div>
+          </a>
+          <a href="404.html" class="blog-card" data-category="design">
+            <div class="media"><span class="cat-tag">Design</span><img src="assets/images/index7.webp" alt="Mobile app screens laid out" loading="lazy"></div>
+            <div class="body"><div class="date">Jan 2026</div><h3>The case for fewer, bigger buttons on mobile</h3><p>Rethinking a dense dashboard for thumbs instead of cursors.</p><span class="read-more">Read More</span></div>
+          </a>
+          <a href="404.html" class="blog-card" data-category="development">
+            <div class="media"><span class="cat-tag">Development</span><img src="assets/images/index8.webp" alt="Terminal window with code" loading="lazy"></div>
+            <div class="body"><div class="date">Dec 2025</div><h3>Respecting prefers-reduced-motion without a boring fallback</h3><p>A checklist for keeping heavily animated sites accessible.</p><span class="read-more">Read More</span></div>
+          </a>
+          <a href="404.html" class="blog-card" data-category="branding">
+            <div class="media"><span class="cat-tag">Branding</span><img src="assets/images/index9.webp" alt="Color palette swatches" loading="lazy"></div>
+            <div class="body"><div class="date">Dec 2025</div><h3>Picking an accent color that survives a full site</h3><p>What looks great in a moodboard often falls apart at UI scale — here's the test I run.</p><span class="read-more">Read More</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOVER REVEAL: BROWSE BY CATEGORY -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Browse by topic</span>
+          <h2 data-reveal="clip">Categories</h2>
+        </div>
+        <div class="service-hover-grid">
+          <a href="404.html" class="service-hover-card" data-cursor-hover>
+            <img src="assets/images/index10.webp" alt="Design category cover" loading="lazy">
+            <div class="overlay"><span>12 articles</span><h3>Design</h3></div>
+          </a>
+          <a href="404.html" class="service-hover-card" data-cursor-hover>
+            <img src="assets/images/index11.webp" alt="Development category cover" loading="lazy">
+            <div class="overlay"><span>9 articles</span><h3>Development</h3></div>
+          </a>
+          <a href="404.html" class="service-hover-card" data-cursor-hover>
+            <img src="assets/images/index12.webp" alt="Branding category cover" loading="lazy">
+            <div class="overlay"><span>6 articles</span><h3>Branding</h3></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRENDING ARTICLES -->
+    <section class="section-tight" id="trending">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Most read</span>
+          <h2 data-reveal="fade-up" data-split="lines">Trending|this month</h2>
+        </div>
+        <div class="trend-list">
+          <a href="404.html" class="trend-item"><span class="idx">01</span><h4>Why most scroll animations feel worse than no animation at all</h4><span>7 min</span></a>
+          <a href="404.html" class="trend-item"><span class="idx">02</span><h4>A lighter way to pin sections with ScrollTrigger</h4><span>5 min</span></a>
+          <a href="404.html" class="trend-item"><span class="idx">03</span><h4>The case for fewer, bigger buttons on mobile</h4><span>4 min</span></a>
+          <a href="404.html" class="trend-item"><span class="idx">04</span><h4>Picking an accent color that survives a full site</h4><span>6 min</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFINITE MARQUEE -->
+    <section class="section-tight">
+      <div class="marquee-wrap" data-speed="30">
+        <div class="marquee-track">
+          <span class="is-fill">Design</span><span class="sep">•</span>
+          <span>Development</span><span class="sep">•</span>
+          <span class="is-fill">Branding</span><span class="sep">•</span>
+          <span>Motion</span><span class="sep">•</span>
+          <span class="is-fill">Process</span><span class="sep">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section" id="newsletter">
+      <div class="container">
+        <div class="newsletter-box" data-reveal="scale" data-split="none">
+          <h2>Get new articles in your inbox</h2>
+          <p>One email a month, no fluff. Unsubscribe whenever.</p>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <p class="newsletter-error" id="newsletter-error" role="alert" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE QUOTE -->
+    <section class="section-tight" id="quote">
+      <div class="container">
+        <div class="quote-block">
+          <span class="mark">"</span>
+          <p data-reveal="blur">Design is the easy part. Explaining the decision behind it is the actual job.</p>
+          <span>— Studio note, filed under "things I repeat too often"</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section final-cta" id="cta">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="container">
+        <h2 data-reveal="scale" data-split="words">Want work like this on your site?</h2>
+        <div class="actions">
+          <a href="contact.html" class="btn btn-primary" data-magnetic>Start a Project</a>
+          <a href="services.html" class="btn btn-ghost" data-magnetic>See Services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div class="form-toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="footer-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo/logo.webp" class="footer-logo" alt="Stackly logo" width="180" height="44">
+          <p>A creative studio for interfaces, motion and digital experiences that hold up under scroll.</p>
+          <a class="footer-whatsapp" href="https://wa.me/7010792745" target="_blank" rel="noopener" aria-label="Chat with Stackly on WhatsApp">
+            <span class="footer-whatsapp-dot" aria-hidden="true"></span>
+            Chat on WhatsApp
+          </a>
+
+          <nav class="footer-social" aria-label="Stackly on social media">
+            <a href="404.html" class="social-icon" aria-label="Stackly on Instagram" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+                <circle cx="12" cy="12" r="3.9"/>
+                <circle cx="17.1" cy="6.9" r="1.05" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on LinkedIn" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="4"/>
+                <path d="M8 10.8v6"/>
+                <circle cx="8" cy="7.7" r="1.05" fill="currentColor" stroke="none"/>
+                <path d="M11.9 16.8v-3.5a2.4 2.4 0 0 1 4.8 0v3.5"/>
+                <path d="M11.9 16.8v-6"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on GitHub" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M9.2 19.4c-3.6 1.1-3.6-2.2-5-2.6m10 4.2v-3.2a2.8 2.8 0 0 0-.8-2.2c2.6-.3 5.3-1.3 5.3-5.7a4.4 4.4 0 0 0-1.2-3.1 4.1 4.1 0 0 0-.1-3.1s-1-.3-3.3 1.2a11.3 11.3 0 0 0-5.8 0C5.9 3.4 4.9 3.7 4.9 3.7a4.1 4.1 0 0 0-.1 3.1 4.4 4.4 0 0 0-1.2 3.2c0 4.3 2.7 5.3 5.3 5.6a2.8 2.8 0 0 0-.8 2.2V21"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on X, formerly Twitter" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <path d="M4.6 4.4h3.1l11.7 15.2h-3.1z"/>
+                <path d="M19.1 4.4 13.8 10.3M10.1 13.5l-5.4 6.1"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on Behance" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M2.9 6.6h4.4a2.2 2.2 0 0 1 0 4.4H2.9zM2.9 11h4.9a2.4 2.4 0 0 1 0 4.8H2.9z"/>
+                <path d="M14.3 12.6h6.8a3.1 3.1 0 0 0-3.2-3.1 3.3 3.3 0 0 0-3.4 3.4 3.3 3.3 0 0 0 3.4 3.4 3.3 3.3 0 0 0 2.8-1.4"/>
+                <path d="M15.4 6.9h4.3"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on Dribbble" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="8.6"/>
+                <path d="M3.9 9.2c5 1.7 10.6 1.5 16.2-.5M3.7 14.9c6-1.4 11.4-.4 15.4 3.5M9 3.7c3.5 4.6 5.3 9.9 5.1 17.1"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+        <p class="footer-huge" data-reveal="fade-up" data-split="words" data-stagger="0.08">
+          <a href="contact.html" data-magnetic>Let's talk</a>
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="404.html">Web Design</a>
+          <a href="404.html">Web Development</a>
+          <a href="404.html">UI/UX Design</a>
+          <a href="404.html">Branding</a>
+          <a href="404.html">Motion Design</a>
+        </div>
+        <div class="footer-col footer-col--contact">
+          <h5>Get in touch</h5>
+          <a class="footer-contact-line" href="mailto:hr@stackly.com">
+            <span class="footer-contact-label">Email</span>
+            hr@stackly.com
+          </a>
+          <a class="footer-contact-line" href="tel:+917010792745">
+            <span class="footer-contact-label">Phone</span>
+            +91 70107 92745
+          </a>
+          <a class="footer-contact-line" href="404.html" target="_blank" rel="noopener">
+            <span class="footer-contact-label">WhatsApp</span>
+            Message us directly
+          </a>
+        </div>
+        <div class="footer-col">
+          <h5>Studio address</h5>
+          <address class="footer-address">
+            Suraksha Nagar, Yelenahalli, Begur,<br>
+            Bengaluru, Karnataka&nbsp;-&nbsp;560068
+          </address>
+          <h5 style="margin-top:22px">Legal</h5>
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Stackly. All rights reserved.</span>
+        <span>Designed &amp; built with GSAP</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/validation.js"></script>
+
+</body>
+</html>

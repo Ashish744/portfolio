@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard · Stackly</title>
+  <meta name="description" content="Stackly studio admin dashboard.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+<body class="dash-body">
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="page-transition"></div>
+
+  <div class="dash-sidebar-overlay"></div>
+
+  <header class="dash-topbar">
+    <button class="dash-sidebar-toggle" aria-label="Toggle menu"><span></span></button>
+    <a href="admin-dashboard.html" class="navbar-brand" aria-label="Stackly admin dashboard"><img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="150" height="34"></a>
+    <div class="dash-topbar-right">
+      <button class="notif-btn" data-goto-404 aria-label="Notifications">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+        <span class="notif-dot"></span>
+      </button>
+      <div class="dash-profile">
+        <button class="dash-profile-btn">
+          <img src="assets/images/index9.webp" alt="Admin profile photo">
+          <span class="name"><strong>Marcus Lee</strong><span>Studio Admin</span></span>
+        </button>
+        <div class="dash-profile-menu">
+          <a href="404.html">My Profile</a>
+          <a href="404.html">Account Settings</a>
+          <a href="login.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside class="dash-sidebar">
+    <nav class="dash-nav">
+      <div class="dash-nav-group">
+        <div class="dash-nav-label">MAIN</div>
+        <a href="admin-dashboard.html" class="is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg> Overview</a>
+        <a href="admin-dashboard.html?view=projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg> Projects</a>
+        <a href="admin-dashboard.html?view=messages"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg> Messages</a>
+        <a href="admin-dashboard.html?view=analytics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V9M12 19V4M20 19v-6"/></svg> Analytics</a>
+      </div>
+      <div class="dash-nav-group">
+        <div class="dash-nav-label">MANAGE</div>
+        <a href="admin-dashboard.html?view=users"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.6-3.4 3.2-5.4 6.5-5.4s5.9 2 6.5 5.4"/><circle cx="18" cy="8" r="2.4"/><path d="M16 14.7c2.7.3 4.6 2.1 5.1 5.3"/></svg> Users</a>
+        <a href="admin-dashboard.html?view=settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg> Settings</a>
+        <a href="admin-dashboard.html?view=activity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg> Activity</a>
+        <a href="login.html" class="dash-logout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5"/><path d="M14 8l4 4-4 4M8 12h10"/></svg> Log Out</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="dash-main dash-admin" id="main">
+    <div class="dash-head">
+      <div><h1>Welcome back, Marcus</h1><p>Here's what's happening across your studio today.</p></div>
+    </div>
+
+    <div class="dash-grid">
+      <div class="dash-card"><div class="dash-card-label">Active Projects <span>●</span></div><div class="value" data-counter="18">0</div><div class="delta up">↑ 3 this month</div></div>
+      <div class="dash-card"><div class="dash-card-label">New Messages <span>●</span></div><div class="value" data-counter="7">0</div><div class="delta up">↑ 2 today</div></div>
+      <div class="dash-card"><div class="dash-card-label">Monthly Revenue <span>●</span></div><div class="value">$<span data-counter="42" data-suffix="k">0</span></div><div class="delta up">↑ 12% vs last month</div></div>
+      <div class="dash-card"><div class="dash-card-label">Active Users <span>●</span></div><div class="value" data-counter="284">0</div><div class="delta down">↓ 4% vs last month</div></div>
+    </div>
+
+    <div class="dash-panels" id="admin-analytics" data-admin-view="analytics">
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Project Delivery — Last 7 Weeks</h3><button data-goto-404>View All</button></div>
+        <div class="chart-bars">
+          <div class="bar"><i data-value="55"></i><span>W1</span></div>
+          <div class="bar"><i data-value="70"></i><span>W2</span></div>
+          <div class="bar"><i data-value="45"></i><span>W3</span></div>
+          <div class="bar"><i data-value="82"></i><span>W4</span></div>
+          <div class="bar"><i data-value="64"></i><span>W5</span></div>
+          <div class="bar"><i data-value="90"></i><span>W6</span></div>
+          <div class="bar"><i data-value="76"></i><span>W7</span></div>
+        </div>
+      </div>
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Project Status</h3></div>
+        <div class="chart-donut" data-value="68"><strong>68%</strong></div>
+        <div class="legend">
+          <span class="legend-item"><span class="legend-dot" style="background:var(--accent)"></span>On track</span>
+          <span class="legend-item"><span class="legend-dot" style="background:var(--bg-elevated);border:1px solid var(--border-strong)"></span>At risk</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-panels">
+      <div class="dash-panel" id="admin-projects" data-admin-view="projects">
+        <div class="dash-panel-head"><h3>Recent Projects</h3><button data-goto-404>View All</button></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Project</th><th>Client</th><th>Status</th><th>Due</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Orbital Dashboard</td><td>Orbital</td><td><span class="pill ok">On track</span></td><td>Oct 12</td><td class="row-actions"><button data-goto-404>Edit</button></td></tr>
+              <tr><td>Kindred Rebrand</td><td>Kindred</td><td><span class="pill pending">Review</span></td><td>Oct 18</td><td class="row-actions"><button data-goto-404>Edit</button></td></tr>
+              <tr><td>Northline App</td><td>Northline</td><td><span class="pill ok">On track</span></td><td>Nov 02</td><td class="row-actions"><button data-goto-404>Edit</button></td></tr>
+              <tr><td>Ferro Docs Site</td><td>Ferro</td><td><span class="pill off">Paused</span></td><td>—</td><td class="row-actions"><button data-goto-404>Edit</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="dash-panel" id="admin-activity" data-admin-view="activity">
+        <div class="dash-panel-head"><h3>Recent Activity</h3></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Orbital milestone marked complete</p><span>2 hours ago</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>New message from Kindred Studio</p><span>5 hours ago</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Invoice #1042 paid</p><span>1 day ago</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Northline feedback round submitted</p><span>2 days ago</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-panel" id="admin-messages" data-admin-view="messages">
+      <div class="dash-panel-head"><h3>Messages</h3><button data-goto-404>View All</button></div>
+      <div class="message-item"><img src="assets/images/index10.webp" alt=""><div><strong>Maya Chen</strong><p>Loving the new hero section — quick question about the CTA copy...</p></div><span>10m</span></div>
+      <div class="message-item"><img src="assets/images/index11.webp" alt=""><div><strong>Daniel Osei</strong><p>Can we push the review call to Thursday?</p></div><span>1h</span></div>
+      <div class="message-item"><img src="assets/images/index12.webp" alt=""><div><strong>Priya Nair</strong><p>Sent over the brand assets you asked for.</p></div><span>3h</span></div>
+    </div>
+
+    <div class="dash-panels">
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Client Health</h3><span class="pill ok">Stable</span></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Orbital Finance</p><span>Strong engagement · 92%</span></div><strong>92%</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Kindred Studio</p><span>Review pending · 74%</span></div><strong>74%</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Northline Logistics</p><span>Needs a check-in · 61%</span></div><strong>61%</strong></div>
+        </div>
+      </div>
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Upcoming Deadlines</h3><span class="pill pending">This week</span></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Kindred brand review</p><span>Thursday · 3:00 PM</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Orbital handoff</p><span>Friday · 11:00 AM</span></div></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Northline usability report</p><span>Monday · 9:30 AM</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-panel">
+      <div class="dash-panel-head"><h3>Team Workload</h3><span class="pill ok">14 active tasks</span></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Team member</th><th>Role</th><th>Active tasks</th><th>Capacity</th></tr></thead>
+          <tbody>
+            <tr><td>Maya Chen</td><td>Project Lead</td><td>4</td><td><span class="pill ok">72%</span></td></tr>
+            <tr><td>Daniel Osei</td><td>Developer</td><td>6</td><td><span class="pill pending">88%</span></td></tr>
+            <tr><td>Priya Nair</td><td>Brand Designer</td><td>4</td><td><span class="pill ok">64%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="dash-panels">
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Revenue Forecast</h3><span class="pill ok">+18% projected</span></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Confirmed retainers</p><span>4 clients · $28k</span></div><strong>$28k</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Pending proposals</p><span>3 opportunities · $16k</span></div><strong>$16k</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Expected monthly total</p><span>Based on current pipeline</span></div><strong>$44k</strong></div>
+        </div>
+      </div>
+      <div class="dash-panel">
+        <div class="dash-panel-head"><h3>Lead Pipeline</h3><span class="pill pending">9 open leads</span></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Discovery calls</p><span>4 leads ready to qualify</span></div><strong>04</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Proposals sent</p><span>3 awaiting a response</span></div><strong>03</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Negotiation</p><span>2 high-value opportunities</span></div><strong>02</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-panel">
+      <div class="dash-panel-head"><h3>System Alerts</h3><span class="pill pending">2 need attention</span></div>
+      <div class="message-item"><span class="activity-dot"></span><div><strong>Storage usage is at 78%</strong><p>Review archived project files before the next upload cycle.</p></div><span>Today</span></div>
+      <div class="message-item"><span class="activity-dot"></span><div><strong>Two invoices are awaiting approval</strong><p>Finance review is needed before the Friday payout run.</p></div><span>Yesterday</span></div>
+      <div class="message-item"><span class="activity-dot"></span><div><strong>All scheduled backups completed</strong><p>Latest backup finished successfully at 02:00 AM.</p></div><span>Safe</span></div>
+    </div>
+
+    <div class="dash-panels">
+      <div class="dash-panel" id="admin-users" data-admin-view="users">
+        <div class="dash-panel-head"><h3>Users</h3><span class="pill ok">284 active</span></div>
+        <div class="message-item"><img src="assets/images/index5.webp" alt="Ada Lovelace"><div><strong>Ada Lovelace</strong><p>Member · Full Site project</p></div><span>Active</span></div>
+        <div class="message-item"><img src="assets/images/index7.webp" alt="Maya Chen"><div><strong>Maya Chen</strong><p>Project Lead · Studio team</p></div><span>Online</span></div>
+        <div class="message-item"><img src="assets/images/index8.webp" alt="Daniel Osei"><div><strong>Daniel Osei</strong><p>Developer · Studio team</p></div><span>Online</span></div>
+      </div>
+      <div class="dash-panel" id="admin-settings" data-admin-view="settings">
+        <div class="dash-panel-head"><h3>Settings</h3><span class="pill ok">Configured</span></div>
+        <div class="activity-list">
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Workspace profile</p><span>Stackly Creative Studio</span></div><strong>Ready</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Notification rules</p><span>Email and dashboard alerts enabled</span></div><strong>On</strong></div>
+          <div class="activity-item"><span class="activity-dot"></span><div><p>Backup schedule</p><span>Daily at 02:00 AM</span></div><strong>Safe</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="dash-panel" data-admin-view="projects"><div class="dash-panel-head"><h3>Project Timeline</h3><span class="pill ok">On schedule</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Discovery and research</p><span>Completed across active projects</span></div><strong>100%</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Design and review</p><span>Three projects currently in review</span></div><strong>72%</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Development handoff</p><span>Two handoffs planned this month</span></div><strong>48%</strong></div></div></section>
+    <section class="dash-panel" data-admin-view="projects"><div class="dash-panel-head"><h3>Deliverables</h3><span class="pill pending">6 due soon</span></div><div class="table-wrap"><table><thead><tr><th>Deliverable</th><th>Project</th><th>Owner</th><th>Due</th></tr></thead><tbody><tr><td>Brand review deck</td><td>Kindred</td><td>Priya</td><td>Oct 10</td></tr><tr><td>Prototype handoff</td><td>Orbital</td><td>Maya</td><td>Oct 12</td></tr><tr><td>Usability report</td><td>Northline</td><td>Daniel</td><td>Oct 15</td></tr></tbody></table></div></section>
+    <section class="dash-panel" data-admin-view="projects"><div class="dash-panel-head"><h3>Client Briefs</h3><span class="pill ok">4 active</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Orbital Finance</p><span>Dashboard refinement brief</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Kindred Studio</p><span>Campaign extension brief</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Ferro Tools</p><span>Documentation refresh brief</span></div></div></div></section>
+
+    <section class="dash-panel" data-admin-view="messages"><div class="dash-panel-head"><h3>Message Queue</h3><span class="pill pending">7 open</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Needs reply today</p><span>2 conversations assigned to Maya</span></div><strong>02</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Waiting on client</p><span>3 conversations pending feedback</span></div><strong>03</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Ready to archive</p><span>2 completed conversations</span></div><strong>02</strong></div></div></section>
+    <section class="dash-panel" data-admin-view="messages"><div class="dash-panel-head"><h3>Response Metrics</h3><span class="pill ok">Healthy</span></div><div class="dash-grid message-summary-grid"><div class="dash-card"><div class="dash-card-label">Average reply</div><div class="value">3.8h</div></div><div class="dash-card"><div class="dash-card-label">Resolved today</div><div class="value">12</div></div></div></section>
+    <section class="dash-panel" data-admin-view="messages"><div class="dash-panel-head"><h3>Message Templates</h3><span class="pill ok">8 saved</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Project kickoff</p><span>Used 18 times this quarter</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Review reminder</p><span>Used 11 times this quarter</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Handoff summary</p><span>Used 9 times this quarter</span></div></div></div></section>
+
+    <section class="dash-panel" data-admin-view="analytics"><div class="dash-panel-head"><h3>Revenue Metrics</h3><span class="pill ok">Trending up</span></div><div class="dash-grid message-summary-grid"><div class="dash-card"><div class="dash-card-label">Quarter revenue</div><div class="value">$118k</div></div><div class="dash-card"><div class="dash-card-label">Average project</div><div class="value">$8.4k</div></div></div></section>
+    <section class="dash-panel" data-admin-view="analytics"><div class="dash-panel-head"><h3>Traffic Sources</h3><span class="pill ok">Last 30 days</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Organic search</p><span>52% of qualified visits</span></div><strong>52%</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Referrals</p><span>31% of qualified visits</span></div><strong>31%</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Direct traffic</p><span>17% of qualified visits</span></div><strong>17%</strong></div></div></section>
+    <section class="dash-panel" data-admin-view="analytics"><div class="dash-panel-head"><h3>Conversion Funnel</h3><span class="pill pending">24 active leads</span></div><div class="table-wrap"><table><thead><tr><th>Stage</th><th>Leads</th><th>Conversion</th><th>Trend</th></tr></thead><tbody><tr><td>Initial inquiry</td><td>24</td><td>100%</td><td><span class="pill ok">Up</span></td></tr><tr><td>Discovery call</td><td>14</td><td>58%</td><td><span class="pill ok">Up</span></td></tr><tr><td>Proposal</td><td>6</td><td>25%</td><td><span class="pill pending">Watch</span></td></tr></tbody></table></div></section>
+
+    <section class="dash-panel" data-admin-view="users"><div class="dash-panel-head"><h3>New Users</h3><span class="pill ok">This month</span></div><div class="dash-grid message-summary-grid"><div class="dash-card"><div class="dash-card-label">New members</div><div class="value">36</div></div><div class="dash-card"><div class="dash-card-label">Invitations sent</div><div class="value">48</div></div></div></section>
+    <section class="dash-panel" data-admin-view="users"><div class="dash-panel-head"><h3>Roles &amp; Access</h3><span class="pill ok">Controlled</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Administrators</p><span>2 accounts with full access</span></div><strong>02</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Studio team</p><span>8 accounts with project access</span></div><strong>08</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Members</p><span>274 client accounts</span></div><strong>274</strong></div></div></section>
+    <section class="dash-panel" data-admin-view="users"><div class="dash-panel-head"><h3>User Activity</h3><span class="pill pending">Monitor</span></div><div class="message-item"><span class="activity-dot"></span><div><strong>18 users signed in today</strong><p>Most active workspace: Full Site project.</p></div><span>Today</span></div><div class="message-item"><span class="activity-dot"></span><div><strong>6 new project saves</strong><p>Orbital is the most saved project this week.</p></div><span>This week</span></div></section>
+
+    <section class="dash-panel" data-admin-view="settings"><div class="dash-panel-head"><h3>Workspace Preferences</h3><span class="pill ok">Saved</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Timezone</p><span>Asia/Kolkata · UTC+05:30</span></div><strong>Set</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Default project status</p><span>On track</span></div><strong>Set</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Weekly digest</p><span>Every Monday at 09:00 AM</span></div><strong>On</strong></div></div></section>
+    <section class="dash-panel" data-admin-view="settings"><div class="dash-panel-head"><h3>Security</h3><span class="pill ok">Protected</span></div><div class="message-item"><span class="activity-dot"></span><div><strong>Two-factor authentication</strong><p>Required for all administrator accounts.</p></div><span>On</span></div><div class="message-item"><span class="activity-dot"></span><div><strong>Last security review</strong><p>No unusual activity was detected.</p></div><span>Today</span></div></section>
+    <section class="dash-panel" data-admin-view="settings"><div class="dash-panel-head"><h3>Integrations</h3><span class="pill pending">1 action</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Calendar sync</p><span>Connected to studio calendar</span></div><strong>On</strong></div><div class="activity-item"><span class="activity-dot"></span><div><p>Cloud storage</p><span>Reauthorization required</span></div><strong>Fix</strong></div></div></section>
+
+    <section class="dash-panel" data-admin-view="activity"><div class="dash-panel-head"><h3>Audit Log</h3><span class="pill ok">Live</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Marcus updated project status</p><span>Orbital Dashboard · 10 minutes ago</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Maya uploaded a new deliverable</p><span>Kindred Rebrand · 1 hour ago</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Invoice marked as paid</p><span>Invoice #1042 · 3 hours ago</span></div></div></div></section>
+    <section class="dash-panel" data-admin-view="activity"><div class="dash-panel-head"><h3>Completed Actions</h3><span class="pill ok">Today</span></div><div class="dash-grid message-summary-grid"><div class="dash-card"><div class="dash-card-label">Tasks completed</div><div class="value">19</div></div><div class="dash-card"><div class="dash-card-label">Files reviewed</div><div class="value">27</div></div></div></section>
+    <section class="dash-panel" data-admin-view="activity"><div class="dash-panel-head"><h3>Scheduled Events</h3><span class="pill pending">Next 7 days</span></div><div class="activity-list"><div class="activity-item"><span class="activity-dot"></span><div><p>Kindred brand review</p><span>Thursday · 3:00 PM</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Team planning session</p><span>Friday · 10:00 AM</span></div></div><div class="activity-item"><span class="activity-dot"></span><div><p>Northline handoff</p><span>Monday · 9:30 AM</span></div></div></div></section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>

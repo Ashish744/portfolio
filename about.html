@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Stackly</title>
+  <meta name="description" content="Meet Stackly — a one-person creative studio for interface and motion design.">
+  <link rel="icon" type="image/webp" href="assets/logo/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="page-transition"></div>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" aria-label="Stackly — go to homepage">
+        <img src="assets/logo/logo.webp" class="navbar-logo" alt="Stackly logo" width="160" height="38">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="login.html" class="btn btn-ghost" data-magnetic>Login</a>
+        <a href="create-account.html" class="btn btn-primary" data-magnetic>Create Account</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost btn-block">Login</a>
+      <a href="create-account.html" class="btn btn-primary btn-block">Create Account</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ABOUT HERO -->
+    <!-- ============ HERO (shared slider layout, 4s auto-rotate) ============ -->
+    <section class="hero hero--photo">
+      <div class="hero-bg-photo" aria-hidden="true">
+        <img src="assets/images/index1.webp" alt="Warm-toned studio workspace backdrop" loading="eager">
+      </div>
+      <div class="hero-bg-scrim" aria-hidden="true"></div>
+      <div class="hero-bg-shape" aria-hidden="true"></div>
+      <script type="application/json" class="hero-slides">
+        [
+          {
+            "img": "assets/images/index2.webp",
+            "alt": "Designer at work in the Stackly studio",
+            "title": "One Designer. <em>No Hand-offs.</em>",
+            "desc": "Stackly is run by a single designer-developer who believes the best products come from one person owning the whole picture \u2014 not a relay race between departments.",
+            "cta": "Work With Us"
+          },
+          {
+            "img": "assets/images/index3.webp",
+            "alt": "Sketchbook pages showing early interface concepts",
+            "title": "Design And Code, <em>Same Hands.</em>",
+            "desc": "Nothing gets lost in translation between the design file and the finished build, because the same person does both.",
+            "cta": "See The Process"
+          },
+          {
+            "img": "assets/images/index4.webp",
+            "alt": "The Stackly studio workspace in Bengaluru",
+            "title": "Six Years Of <em>Shipped Work.</em>",
+            "desc": "From first freelance projects in 2021 to interaction-led product work for teams across three continents.",
+            "cta": "Read The Story"
+          }
+        ]
+      </script>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker"><span class="dot"></span> About the studio</div>
+          <h1 class="hero-title">
+            <span class="line"><span>One Designer.</span></span>
+            <span class="line"><span>No Hand-offs.</span></span>
+          </h1>
+          <p class="hero-description">Stackly is run by a single designer-developer who believes the best products come from one person owning the whole picture — not a relay race between departments.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary" data-magnetic><span class="hero-cta">Work With Us</span></a>
+            <a href="services.html" class="btn btn-ghost" data-magnetic>See Services</a>
+          </div>
+          <div class="hero-dots" role="tablist" aria-label="Hero slides">
+            <button type="button" class="hero-dot is-active" role="tab" aria-selected="true" aria-label="Show slide 1"></button>
+            <button type="button" class="hero-dot" role="tab" aria-selected="false" aria-label="Show slide 2"></button>
+            <button type="button" class="hero-dot" role="tab" aria-selected="false" aria-label="Show slide 3"></button>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-preview">
+            <img class="hero-image" src="assets/images/index5.webp" alt="Designer at work in the Stackly studio" width="1000" height="1250">
+          </div>
+          <div class="hero-float-card" data-float="12">
+            <div class="ring" style="--ring-p:88%"></div>
+            <div>
+              <strong>5+ yrs</strong>
+              <span>Running independently</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator"><span>SCROLL</span><span class="line"></span></div>
+    </section>
+
+    <!-- PERSONAL INTRODUCTION -->
+    <section class="section" id="intro">
+      <div class="container intro-grid">
+        <div class="intro-media">
+          <div class="frame"><img src="assets/images/index6.webp" alt="Sketching a layout by hand" loading="lazy"></div>
+        </div>
+        <div class="intro-copy">
+          <span class="eyebrow">The short version</span>
+          <h2 data-reveal="fade-up" data-split="words">Hi — I design and build the kind of interfaces I'd want to use myself.</h2>
+          <p>I started as a front-end developer, got frustrated translating other people's flat designs into motion, and eventually took over the design side entirely. Now I do both — which means fewer meetings and a lot less lost in translation.</p>
+          <p>Outside of client work, I write about interface animation and occasionally teach a workshop on scroll-based storytelling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE JOURNEY (horizontal strip, distinct from home's vertical timeline) -->
+    <section class="section-tight" id="journey">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Creative journey</span>
+          <h2 data-reveal="fade-left" data-split="none">Milestones along the way</h2>
+        </div>
+        <div class="journey-strip">
+          <div class="journey-chip" data-reveal="fade-up" data-delay="0"><span class="yr">2018</span><h4>Design foundations</h4><p>Formal training in visual design while freelancing on the side.</p></div>
+          <div class="journey-chip" data-reveal="fade-up" data-delay="0.05"><span class="yr">2019</span><h4>First agency role</h4><p>Front-end developer at a small digital agency.</p></div>
+          <div class="journey-chip" data-reveal="fade-up" data-delay="0.1"><span class="yr">2021</span><h4>Went independent</h4><p>Left to run Stackly full-time.</p></div>
+          <div class="journey-chip" data-reveal="fade-up" data-delay="0.15"><span class="yr">2023</span><h4>Specialised in motion</h4><p>Focused the practice on interaction-led product design.</p></div>
+          <div class="journey-chip" data-reveal="fade-up" data-delay="0.2"><span class="yr">2025</span><h4>Started teaching</h4><p>First scroll-animation workshop, now run quarterly.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (linear bars — distinct from home's ring grid) -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Where the time goes</span>
+          <h2 data-reveal="blur">Skills</h2>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item" data-reveal="fade-right" data-split="none"><div class="top"><span>UI/UX Design</span><span>92%</span></div><div class="skill-bar-track"><i data-width="92"></i></div></div>
+          <div class="skill-bar-item" data-reveal="fade-right" data-split="none" data-delay="0.05"><div class="top"><span>Front-end Development</span><span>88%</span></div><div class="skill-bar-track"><i data-width="88"></i></div></div>
+          <div class="skill-bar-item" data-reveal="fade-right" data-split="none" data-delay="0.1"><div class="top"><span>Motion &amp; Animation</span><span>85%</span></div><div class="skill-bar-track"><i data-width="85"></i></div></div>
+          <div class="skill-bar-item" data-reveal="fade-right" data-split="none" data-delay="0.15"><div class="top"><span>Branding &amp; Identity</span><span>80%</span></div><div class="skill-bar-track"><i data-width="80"></i></div></div>
+          <div class="skill-bar-item" data-reveal="fade-right" data-split="none" data-delay="0.2"><div class="top"><span>Creative Direction</span><span>90%</span></div><div class="skill-bar-track"><i data-width="90"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (expandable accordion) -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Career so far</span>
+          <h2 data-reveal="fade-up" data-split="chars">Experience</h2>
+          <p>Click a role to expand it.</p>
+        </div>
+        <div class="accordion-list">
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button">
+              <span class="left"><h3>Founder &amp; Lead Designer — Stackly</h3><span class="meta">2024 — Present</span></span>
+              <span class="accordion-icon"></span>
+            </button>
+            <div class="accordion-panel"><div class="accordion-panel-inner">Running an independent creative practice focused on animated product interfaces, working directly with founders and product leads on branding, UI/UX and front-end delivery.</div></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button">
+              <span class="left"><h3>Freelance Product Designer</h3><span class="meta">2021 — 2024</span></span>
+              <span class="accordion-icon"></span>
+            </button>
+            <div class="accordion-panel"><div class="accordion-panel-inner">Independent design and development work across fintech, wellness and logistics clients, growing mostly through referral.</div></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button">
+              <span class="left"><h3>Front-end Developer — Studio Twelve</h3><span class="meta">2019 — 2021</span></span>
+              <span class="accordion-icon"></span>
+            </button>
+            <div class="accordion-panel"><div class="accordion-panel-inner">Built and maintained marketing sites and internal tools for a small digital agency's client roster.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Recognition</span>
+          <h2 data-reveal="scale">Achievements</h2>
+        </div>
+        <div class="achieve-grid">
+          <div class="achieve-card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M17 6h2a2 2 0 0 1-2 4M7 6H5a2 2 0 0 0 2 4"/></svg><h4>Awwwards Honorable Mention</h4><span>2025</span></div>
+          <div class="achieve-card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17l-6.2 3.3 1.6-6.8-5.2-4.6 6.9-.6Z"/></svg><h4>CSS Design Awards — Site of the Day</h4><span>2024</span></div>
+          <div class="achieve-card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><h4>Featured, Typewolf</h4><span>2024</span></div>
+          <div class="achieve-card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg><h4>Design Workshop Speaker</h4><span>2025 &amp; 2026</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS & TECHNOLOGIES -->
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Toolkit</span>
+          <h2 data-reveal="fade-up" data-split="words">Tools &amp; technologies</h2>
+        </div>
+        <div class="tool-group">
+          <h5>Design</h5>
+          <div class="tool-cloud">
+            <span class="tool-tag">Figma</span><span class="tool-tag">Adobe Illustrator</span><span class="tool-tag">Photoshop</span><span class="tool-tag">Blender</span><span class="tool-tag">Principle</span>
+          </div>
+        </div>
+        <div class="tool-group">
+          <h5>Development</h5>
+          <div class="tool-cloud">
+            <span class="tool-tag">HTML5</span><span class="tool-tag">CSS3</span><span class="tool-tag">JavaScript</span><span class="tool-tag">GSAP</span><span class="tool-tag">Webflow</span><span class="tool-tag">Git</span>
+          </div>
+        </div>
+        <div class="tool-group">
+          <h5>Other</h5>
+          <div class="tool-cloud">
+            <span class="tool-tag">Notion</span><span class="tool-tag">Linear</span><span class="tool-tag">Loom</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE PHILOSOPHY -->
+    <section class="section" id="philosophy">
+      <div class="container">
+        <span class="eyebrow">How I work</span>
+        <div class="philosophy-block">
+          <p class="big-quote" data-reveal="blur">Good design explains itself. <em>Good motion explains what changed.</em> Everything else is decoration.</p>
+        </div>
+        <div class="principle-grid">
+          <div class="principle-card" data-reveal="fade-up"><span class="idx">01</span><h4>Content first</h4><p>Layouts are built around real copy and real data, never lorem ipsum.</p></div>
+          <div class="principle-card" data-reveal="fade-up" data-delay="0.08"><span class="idx">02</span><h4>Motion with purpose</h4><p>Animation should clarify a change of state, not just look impressive.</p></div>
+          <div class="principle-card" data-reveal="fade-up" data-delay="0.16"><span class="idx">03</span><h4>Ship, then refine</h4><p>A shipped v1 beats a perfect deck that never leaves Figma.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">In their words</span>
+          <h2 data-reveal="fade-up" data-split="lines">People I've worked with|on the record</h2>
+        </div>
+        <div class="testimonial-list">
+          <div class="testimonial-item">
+            <img src="assets/images/index7.webp" alt="Portrait of Theo Marsh" loading="lazy">
+            <div class="testimonial-head">
+              <strong>Theo Marsh</strong>
+              <span>Engineering Lead, Ferro</span>
+              <div class="testimonial-body"><p>Rare to find someone who can hand off production-ready CSS and also make the design case for why a decision matters. Our documentation site finally feels like part of the product.</p></div>
+            </div>
+            <span class="testimonial-stars">★★★★★</span>
+            <span class="testimonial-plus"></span>
+          </div>
+          <div class="testimonial-item">
+            <img src="assets/images/index8.webp" alt="Portrait of Alina Petrov" loading="lazy">
+            <div class="testimonial-head">
+              <strong>Alina Petrov</strong>
+              <span>Marketing Director, Kindred</span>
+              <div class="testimonial-body"><p>Workshop attendees still mention the scroll-animation session two years later. Clear, practical, and immediately useful for our internal team.</p></div>
+            </div>
+            <span class="testimonial-stars">★★★★★</span>
+            <span class="testimonial-plus"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section final-cta" id="cta">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="container">
+        <h2 data-reveal="scale" data-split="words">Curious if we're a fit? Let's find out.</h2>
+        <div class="actions">
+          <a href="contact.html" class="btn btn-primary" data-magnetic>Get in Touch</a>
+          <a href="services.html" class="btn btn-ghost" data-magnetic>See Services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo/logo.webp" class="footer-logo" alt="Stackly logo" width="180" height="44">
+          <p>A creative studio for interfaces, motion and digital experiences that hold up under scroll.</p>
+          <a class="footer-whatsapp" href="https://wa.me/7010792745" target="_blank" rel="noopener" aria-label="Chat with Stackly on WhatsApp">
+            <span class="footer-whatsapp-dot" aria-hidden="true"></span>
+            Chat on WhatsApp
+          </a>
+
+          <nav class="footer-social" aria-label="Stackly on social media">
+            <a href="404.html" class="social-icon" aria-label="Stackly on Instagram" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+                <circle cx="12" cy="12" r="3.9"/>
+                <circle cx="17.1" cy="6.9" r="1.05" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on LinkedIn" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="4"/>
+                <path d="M8 10.8v6"/>
+                <circle cx="8" cy="7.7" r="1.05" fill="currentColor" stroke="none"/>
+                <path d="M11.9 16.8v-3.5a2.4 2.4 0 0 1 4.8 0v3.5"/>
+                <path d="M11.9 16.8v-6"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on GitHub" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M9.2 19.4c-3.6 1.1-3.6-2.2-5-2.6m10 4.2v-3.2a2.8 2.8 0 0 0-.8-2.2c2.6-.3 5.3-1.3 5.3-5.7a4.4 4.4 0 0 0-1.2-3.1 4.1 4.1 0 0 0-.1-3.1s-1-.3-3.3 1.2a11.3 11.3 0 0 0-5.8 0C5.9 3.4 4.9 3.7 4.9 3.7a4.1 4.1 0 0 0-.1 3.1 4.4 4.4 0 0 0-1.2 3.2c0 4.3 2.7 5.3 5.3 5.6a2.8 2.8 0 0 0-.8 2.2V21"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on X, formerly Twitter" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <path d="M4.6 4.4h3.1l11.7 15.2h-3.1z"/>
+                <path d="M19.1 4.4 13.8 10.3M10.1 13.5l-5.4 6.1"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on Behance" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M2.9 6.6h4.4a2.2 2.2 0 0 1 0 4.4H2.9zM2.9 11h4.9a2.4 2.4 0 0 1 0 4.8H2.9z"/>
+                <path d="M14.3 12.6h6.8a3.1 3.1 0 0 0-3.2-3.1 3.3 3.3 0 0 0-3.4 3.4 3.3 3.3 0 0 0 3.4 3.4 3.3 3.3 0 0 0 2.8-1.4"/>
+                <path d="M15.4 6.9h4.3"/>
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Stackly on Dribbble" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="8.6"/>
+                <path d="M3.9 9.2c5 1.7 10.6 1.5 16.2-.5M3.7 14.9c6-1.4 11.4-.4 15.4 3.5M9 3.7c3.5 4.6 5.3 9.9 5.1 17.1"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+        <p class="footer-huge" data-reveal="fade-up" data-split="words" data-stagger="0.08">
+          <a href="contact.html" data-magnetic>Let's talk</a>
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="404.html">Web Design</a>
+          <a href="404.html">Web Development</a>
+          <a href="404.html">UI/UX Design</a>
+          <a href="404.html">Branding</a>
+          <a href="404.html">Motion Design</a>
+        </div>
+        <div class="footer-col footer-col--contact">
+          <h5>Get in touch</h5>
+          <a class="footer-contact-line" href="mailto:hr@stackly.com">
+            <span class="footer-contact-label">Email</span>
+            hr@stackly.com
+          </a>
+          <a class="footer-contact-line" href="tel:+917010792745">
+            <span class="footer-contact-label">Phone</span>
+            +91 70107 92745
+          </a>
+          <a class="footer-contact-line" href="404.html" target="_blank" rel="noopener">
+            <span class="footer-contact-label">WhatsApp</span>
+            Message us directly
+          </a>
+        </div>
+        <div class="footer-col">
+          <h5>Studio address</h5>
+          <address class="footer-address">
+            Suraksha Nagar, Yelenahalli, Begur,<br>
+            Bengaluru, Karnataka&nbsp;-&nbsp;560068
+          </address>
+          <h5 style="margin-top:22px">Legal</h5>
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Stackly. All rights reserved.</span>
+        <span>Designed &amp; built with GSAP</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/validation.js"></script>
+
+</body>
+</html>
