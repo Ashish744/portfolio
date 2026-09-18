@@ -3,6 +3,10 @@
    ========================================================================== */
 
 (function(){
+  const storedEmail = localStorage.getItem('stacklyUserEmail');
+  const profileName = document.querySelector('.dash-profile-btn .name strong');
+  if(storedEmail && profileName) profileName.textContent = storedEmail;
+
   const sidebar = document.querySelector('.dash-sidebar');
   const toggle = document.querySelector('.dash-sidebar-toggle');
   const overlay = document.querySelector('.dash-sidebar-overlay');
@@ -41,8 +45,11 @@
   const requestedView = new URLSearchParams(window.location.search).get('view') || window.location.hash.replace('#admin-', '');
   const adminMain = document.querySelector('.dash-admin');
   const requestedTarget = adminViewMap[requestedView];
+  const currentPage = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.dash-sidebar .dash-nav a').forEach(link=>{
-    link.classList.toggle('is-active', requestedTarget ? link.href.includes(`view=${requestedView}`) : link.getAttribute('href') === 'admin-dashboard.html');
+    const linkUrl = new URL(link.href, window.location.href);
+    const isCurrentPage = linkUrl.pathname.split('/').pop() === currentPage;
+    link.classList.toggle('is-active', requestedTarget ? link.href.includes(`view=${requestedView}`) : isCurrentPage);
   });
   if(adminMain && requestedTarget){
     const viewItems = Array.from(adminMain.querySelectorAll('[data-admin-view]')).filter(item=> item.dataset.adminView === requestedView);

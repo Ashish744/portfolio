@@ -188,6 +188,7 @@ function initLoginForm(){
     e.preventDefault();
     const ok = [validateEmail(email), validatePassword(password)].every(Boolean);
     if(!ok) return;
+    localStorage.setItem('stacklyUserEmail', email.value.trim());
     showToast('Signing you in…');
     setTimeout(()=>{
       window.location.href = role === 'admin' ? 'admin-dashboard.html' : 'public-dashboard.html';
