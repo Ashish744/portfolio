@@ -58,7 +58,7 @@
   .skills-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .role-select{grid-template-columns:1fr}
-  .hero-float-card{left:0;bottom:-18px;padding:12px 16px}
+  .hero-float-card{left:12px;bottom:12px;padding:12px 16px}
   .error-code{font-size:clamp(4rem,26vw,7rem)}
   .form-toast{left:16px;right:16px;bottom:16px}
 }
